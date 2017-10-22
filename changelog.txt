@@ -1,0 +1,13 @@
+v3.0 	22.10.17
+Major update. 
+Changes to the input sheet, making it more use friendly.
+Reorganisation of the calculations, making the sheet easier to update later. This
+also fixed multiple errors, such as the interaction between rending and extra damage
+on a '6'.
+Fixed the interaction between reroll to wound, and effects on a '6' to wound.
+Fixed the broken reroll ones to hit, making it no longer apply twice.
+Added Melta
+Added All is Dust
+
+Added user manual
+Published on Github
