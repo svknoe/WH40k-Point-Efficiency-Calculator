@@ -1,5 +1,10 @@
 v3.2 06.11.17
 Added an optional input sheet for enemies.
+Added support for to hit penalties for enemy targets.
+Removed the partial support for Quatum Shielding.
+Removed support for Rapacious Hunger.
+Updated Hive Tyrant stats for enemy targets.
+Replaced Bloodthirster with Daemon Prince in enemy targets.
 
 
 v3.1 05.11.17
