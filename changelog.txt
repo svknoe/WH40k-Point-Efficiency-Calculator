@@ -5,6 +5,7 @@ Removed the partial support for Quatum Shielding.
 Removed support for Rapacious Hunger.
 Updated Hive Tyrant stats for enemy targets.
 Replaced Bloodthirster with Daemon Prince in enemy targets.
+Fixed an error that caused snipers with multiple attacks to cause too few mortal wounds.
 
 
 v3.1 05.11.17
