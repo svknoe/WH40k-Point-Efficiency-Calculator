@@ -1,3 +1,7 @@
+v3.2a 07.11.17
+Fixed the interaction between to hit penalties and rerolls to hit.
+
+
 v3.2 06.11.17
 Added an optional input sheet for enemies.
 Added support for to hit penalties for enemy targets.
