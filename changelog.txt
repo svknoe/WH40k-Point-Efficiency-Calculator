@@ -1,6 +1,11 @@
+v3.2c 05.02.18
+Fixed a bug where poison did not respond to changing the targets vehicle status.
+
+v3.2b not uploaded
+Bug fix
+
 v3.2a 07.11.17
 Fixed the interaction between to hit penalties and rerolls to hit.
-
 
 v3.2 06.11.17
 Added an optional input sheet for enemies.
@@ -11,11 +16,9 @@ Updated Hive Tyrant stats for enemy targets.
 Replaced Bloodthirster with Daemon Prince in enemy targets.
 Fixed an error that caused snipers with multiple attacks to cause too few mortal wounds.
 
-
 v3.1 05.11.17
 Fixed the chance to rend.
 Updated the reroll to hit input to reflect the user manual.
-
 
 v3.0 	22.10.17
 Major update. 
@@ -27,6 +30,5 @@ Fixed the interaction between reroll to wound, and effects on a '6' to wound.
 Fixed the broken reroll ones to hit, making it no longer apply twice.
 Added Melta
 Added All is Dust
-
 Added user manual
 Published on Github
