@@ -1,3 +1,6 @@
+v3.2d 10.03.18
+The 'rend dmg mod' sheet had the wrong forumla from line 114 onwards.
+
 v3.2c 05.02.18
 Fixed a bug where poison did not respond to changing the targets vehicle status.
 
