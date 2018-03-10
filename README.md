@@ -1,4 +1,4 @@
-# WH40k-Point-Efficiency-Calculator v3.2c
+# WH40k-Point-Efficiency-Calculator v3.2d
 Excel sheet for computing expected damage and point efficiency in Warhammer 40k 8th edition
 
 'WH40k Point Efficiency Calculator.xlsx' is the main file. Download it and open it with Excel. 
