@@ -1,3 +1,6 @@
+v3.3b 16.12.18
+Updated point costs for enemies.
+
 v3.3a 14.04.18
 Added the option of letting a unit to choose weapon types based on the target.
 Changed some enemies and updated point costs.
