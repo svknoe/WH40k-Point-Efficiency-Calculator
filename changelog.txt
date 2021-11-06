@@ -1,3 +1,16 @@
+v4.0a
+Updated reroll interaction with penalties.
+Added roll modifier caps.
+Added wound modifiers.
+Added exploding 6s to hit.
+Added damage reduction abilities.
+Added Ignore AP abilities.
+Added Transhuman Physiology.
+Updated stats for enemies.
+Updated user guide with new abilities and Enemies sheet.
+Added more syntax explanations to Input sheet.
+Rework of interactions between (random) damage, FNP and target wounds.
+
 v3.3b 16.12.18
 Updated point costs for enemies.
 
