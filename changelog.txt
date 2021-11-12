@@ -1,3 +1,9 @@
+v4.1a
+Added option to ignore overkill calculations.
+Added display of colour coded defensive abilities to output sheets.
+Reduced column widths for easier viewing.
+Update enemy stats.
+
 v4.0a
 Updated reroll interaction with penalties.
 Added roll modifier caps.
