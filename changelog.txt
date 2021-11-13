@@ -1,3 +1,6 @@
+v4.1b
+Bug fix: The armor value of the fourth enemy was hardcoded to 5, rather than being read from the enemies sheet.
+
 v4.1a
 Added option to ignore overkill calculations.
 Added display of colour coded defensive abilities to output sheets.
