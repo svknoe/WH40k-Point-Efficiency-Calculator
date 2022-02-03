@@ -1,3 +1,34 @@
+v5.0a 03.02.2022
+Added descriptions of legal inputs.
+Shifted PPP color range downwards:
+ - From (green = 1.5, yellow = 4, red = 10) to (green = 0.8, yellow = 2.8, red = 8)
+Fixed bug that caused mortal wounds to ignore FNP.
+Fixed poison bug.
+Added more damage profiles.
+Added a distinction between melee and ranged attacks.
+Updated enemy point costs, changed enemy selection.
+
+Added more special rules for attackers:
+ - Auto hits
+ - Auto wound on hit rolls
+ - Reroll one failed hit roll
+ - Auto wounds
+ - Reroll one failed wound roll
+ - Reroll damage rolls
+ - Reroll 1 damage roll
+ - Ignore invuls
+
+Added more special rules for defenders:
+ - Invul saves vs melee.
+ - Invul saves vs ranged.
+ - Save vs mortal wounds.
+ - No rerolls from melee
+ - No rerolls from ranged
+
+
+v4.1c 08.12.2021
+Updated enemy stats.
+
 v4.1b
 Bug fix: The armor value of the fourth enemy was hardcoded to 5, rather than being read from the enemies sheet.
 
