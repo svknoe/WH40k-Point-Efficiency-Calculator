@@ -1,3 +1,7 @@
+v5.1a 04.02.2022
+Fixed exploding 6s bug caused by last update.
+Replaced Talos by Stormsurge.
+
 v5.0a 03.02.2022
 Added descriptions of legal inputs.
 Shifted PPP color range downwards:
