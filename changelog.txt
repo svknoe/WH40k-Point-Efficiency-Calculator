@@ -1,3 +1,9 @@
+v5.1b 05.02.2022
+Removed rows 151-300 to reduce file size.
+Minor performance increase.
+Removed six enemy columns.
+Updated enemy stats.
+
 v5.1a 04.02.2022
 Fixed exploding 6s bug caused by last update.
 Replaced Talos by Stormsurge.
