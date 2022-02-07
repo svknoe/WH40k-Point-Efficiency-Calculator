@@ -1,3 +1,8 @@
+v5.1c 07.02.2022
+Fixed damage 11-16 being broken.
+Fixed line 46 being broken.
+Changed reroll notation from 'n/6' to 'n' to avoid Google Sheets fraction/date bug.
+
 v5.1b 05.02.2022
 Removed rows 151-300 to reduce file size.
 Minor performance increase.
