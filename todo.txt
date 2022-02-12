@@ -1,0 +1,14 @@
+MINOR:
+ - Change blend color coding to one that is compatible with google sheets.
+ - Minus to hit in cc and vs ranged.
+ - Auto wounds on arbitrary hit roll.
+ - Include Iron Hands Heavy Intercessors enemy.
+
+MAJOR:
+ - Include 'Unit Overview' sheet:
+	- Average PPP.
+	- Average PPP vs. different groups of enemies: Light infantry, elites, vehicles.
+ - Add a defensive row reference column to the input sheet that links an attacking profile to a defensive one.
+ - Add a collection of default enemy attackers that attack linked input profiles.
+ - Calculate a tankyness score for input defensive profiles and include it in the Unit Overview sheet.
+ - Introduce a tankyness * PPP measure (Abstract Awesomeness Measure [AAM]?) in the Unit Overview sheet.
