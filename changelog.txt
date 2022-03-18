@@ -1,3 +1,14 @@
+v5.2a 18.03.2022
+Split hit penalties into melee and ranged versions.
+Split wound penalties into melee and ranged versions.
+Split reroll denying into melee and ranged versions.
+Added light cover.
+Added ignore light cover.
+Added half damage.
+Extended auto wound on 6s to auto wound on Xs.
+Changed wording of transhuman.
+Updated enemy stats.
+
 v5.1c 07.02.2022
 Fixed damage 11-16 being broken.
 Fixed line 46 being broken.
