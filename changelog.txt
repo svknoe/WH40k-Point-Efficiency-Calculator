@@ -1,3 +1,10 @@
+v5.3a 12.05.2022
+Added Min Hit Roll for defenders.
+Added AP reduction (AoC).
+Added setting for max overkill penalty.
+It is no longer required to insert weapon names.
+Updated enemy stats.
+
 v5.2b 29.03.2022
 Fixed formula bug for reroll 1 hit that impacted some rows.
 Wound on hit roll now correctly doesn't auto wound on rolls of 1.
