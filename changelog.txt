@@ -1,3 +1,6 @@
+v5.3b 21.06.2022
+Added relative referencing to 'Combine' and 'Pick Best'.
+
 v5.3a 12.05.2022
 Added Min Hit Roll for defenders.
 Added AP reduction (AoC).
@@ -104,7 +107,7 @@ The 'rend dmg mod' sheet had the wrong forumla from line 114 onwards.
 v3.2c 05.02.18
 Fixed a bug where poison did not respond to changing the targets vehicle status.
 
-v3.2b not uploaded
+v3.2b - Not uploaded
 Bug fix
 
 v3.2a 07.11.17
@@ -123,7 +126,7 @@ v3.1 05.11.17
 Fixed the chance to rend.
 Updated the reroll to hit input to reflect the user manual.
 
-v3.0 	22.10.17
+v3.0 22.10.17
 Major update. 
 Changes to the input sheet, making it more use friendly.
 Reorganisation of the calculations, making the sheet easier to update later. This
