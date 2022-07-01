@@ -1,3 +1,6 @@
+v5.3c 01.07.2022
+Added option of ignoring penalties to hit and wound.
+
 v5.3b 21.06.2022
 Added relative referencing to 'Combine' and 'Pick Best'.
 
@@ -69,16 +72,16 @@ Added more special rules for defenders:
 v4.1c 08.12.2021
 Updated enemy stats.
 
-v4.1b
+v4.1b ??.??.2021
 Bug fix: The armor value of the fourth enemy was hardcoded to 5, rather than being read from the enemies sheet.
 
-v4.1a
+v4.1a ??.??.2021
 Added option to ignore overkill calculations.
 Added display of colour coded defensive abilities to output sheets.
 Reduced column widths for easier viewing.
 Update enemy stats.
 
-v4.0a
+v4.0a ??.??.2021
 Updated reroll interaction with penalties.
 Added roll modifier caps.
 Added wound modifiers.
