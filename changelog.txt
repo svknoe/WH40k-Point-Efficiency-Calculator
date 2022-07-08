@@ -1,4 +1,10 @@
-v5.4d 04.07.2022
+v5.4a 08.07.2022
+Updated UI
+Added option for flat number of mortal wounds.
+Fixed bug where saves vs mortal wounds were applied twice.
+Fixed a bug that stopped combining rows working for some rows.
+
+v5.3d 04.07.2022
 Updated target stats.
 
 v5.3c 01.07.2022
