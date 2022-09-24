@@ -1,3 +1,7 @@
+v5.4b 24.09.2022
+Added Deamon saves.
+Updated enemy stats.
+
 v5.4a 08.07.2022
 Updated UI
 Added option for flat number of mortal wounds.
