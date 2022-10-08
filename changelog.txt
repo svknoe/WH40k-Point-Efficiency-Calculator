@@ -1,3 +1,7 @@
+v5.4d 08.10.2022
+Bug fix: Corrected overkill penalty.
+Updated target stats.
+
 v5.4c 26.09.2022
 Bug fix: A few rows had corrupted formulas.
 
