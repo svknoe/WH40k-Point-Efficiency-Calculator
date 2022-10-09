@@ -1,5 +1,8 @@
 v5.4d 08.10.2022
+Bug fix: Fixed reroll 1 die to wound in cases where there are no hits.
 Bug fix: Corrected overkill penalty.
+Added unit size for targets.
+Overkill penalties now only apply to target unit of more than 1 model.
 Updated target stats.
 
 v5.4c 26.09.2022
