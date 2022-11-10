@@ -1,44 +1,49 @@
-v5.4d 08.10.2022
+v5.4e 2022-11-10
+Added 'Changelog' sheet.
+Added vehicle filter for mortal wounds.
+Updated target stats.
+
+v5.4d 2022-10-08
 Bug fix: Fixed reroll 1 die to wound in cases where there are no hits.
 Bug fix: Corrected overkill penalty.
 Added unit size for targets.
 Overkill penalties now only apply to target unit of more than 1 model.
 Updated target stats.
 
-v5.4c 26.09.2022
+v5.4c 2022-09-26
 Bug fix: A few rows had corrupted formulas.
 
-v5.4b 24.09.2022
+v5.4b 2022-09-24
 Added Deamon saves.
 Updated enemy stats.
 
-v5.4a 08.07.2022
+v5.4a 2022-07-08
 Updated UI
 Added option for flat number of mortal wounds.
 Fixed bug where saves vs mortal wounds were applied twice.
 Fixed a bug that stopped combining rows working for some rows.
 
-v5.3d 04.07.2022
+v5.3d 2022-07-04
 Updated target stats.
 
-v5.3c 01.07.2022
+v5.3c 2022-07-01
 Added option of ignoring penalties to hit and wound.
 
-v5.3b 21.06.2022
+v5.3b 2022-06-21
 Added relative referencing to 'Combine' and 'Pick Best'.
 
-v5.3a 12.05.2022
+v5.3a 2022-05-12
 Added Min Hit Roll for defenders.
 Added AP reduction (AoC).
 Added setting for max overkill penalty.
 It is no longer required to insert weapon names.
 Updated enemy stats.
 
-v5.2b 29.03.2022
+v5.2b 2022-03-21
 Fixed formula bug for reroll 1 hit that impacted some rows.
 Wound on hit roll now correctly doesn't auto wound on rolls of 1.
 
-v5.2a 18.03.2022
+v5.2a 2022-03-18
 Split hit penalties into melee and ranged versions.
 Split wound penalties into melee and ranged versions.
 Split reroll denying into melee and ranged versions.
@@ -54,17 +59,17 @@ Fixed damage 11-16 being broken.
 Fixed line 46 being broken.
 Changed reroll notation from 'n/6' to 'n' to avoid Google Sheets fraction/date bug.
 
-v5.1b 05.02.2022
+v5.1b 2022-02-05
 Removed rows 151-300 to reduce file size.
 Minor performance increase.
 Removed six enemy columns.
 Updated enemy stats.
 
-v5.1a 04.02.2022
+v5.1a 2022-02-04
 Fixed exploding 6s bug caused by last update.
 Replaced Talos by Stormsurge.
 
-v5.0a 03.02.2022
+v5.0a 2022-02-03
 Added descriptions of legal inputs.
 Shifted PPP color range downwards:
  - From (green = 1.5, yellow = 4, red = 10) to (green = 0.8, yellow = 2.8, red = 8)
@@ -92,19 +97,19 @@ Added more special rules for defenders:
  - No rerolls from ranged
 
 
-v4.1c 08.12.2021
+v4.1c 2021-12-21
 Updated enemy stats.
 
-v4.1b ??.??.2021
+v4.1b 2021-11-13
 Bug fix: The armor value of the fourth enemy was hardcoded to 5, rather than being read from the enemies sheet.
 
-v4.1a ??.??.2021
+v4.1a 2021-11-12
 Added option to ignore overkill calculations.
 Added display of colour coded defensive abilities to output sheets.
 Reduced column widths for easier viewing.
 Update enemy stats.
 
-v4.0a ??.??.2021
+v4.0a 2021-11-06
 Updated reroll interaction with penalties.
 Added roll modifier caps.
 Added wound modifiers.
@@ -117,29 +122,29 @@ Updated user guide with new abilities and Enemies sheet.
 Added more syntax explanations to Input sheet.
 Rework of interactions between (random) damage, FNP and target wounds.
 
-v3.3b 16.12.18
+v3.3b 2018-12-16
 Updated point costs for enemies.
 
-v3.3a 14.04.18
+v3.3a 2018-04-14
 Added the option of letting a unit to choose weapon types based on the target.
 Changed some enemies and updated point costs.
 
-v3.2e 10.03.18
+v3.2e 2018-03-10
 Fixed the title of the PPP sheet.
 
-v3.2d 10.03.18
+v3.2d 2018-03-10
 The 'rend dmg mod' sheet had the wrong forumla from line 114 onwards.
 
-v3.2c 05.02.18
+v3.2c 2018-02-05
 Fixed a bug where poison did not respond to changing the targets vehicle status.
 
 v3.2b - Not uploaded
 Bug fix
 
-v3.2a 07.11.17
+v3.2a 2017-11-07
 Fixed the interaction between to hit penalties and rerolls to hit.
 
-v3.2 06.11.17
+v3.2 2017-11-06
 Added an optional input sheet for enemies.
 Added support for to hit penalties for enemy targets.
 Removed the partial support for Quatum Shielding.
@@ -148,11 +153,11 @@ Updated Hive Tyrant stats for enemy targets.
 Replaced Bloodthirster with Daemon Prince in enemy targets.
 Fixed an error that caused snipers with multiple attacks to cause too few mortal wounds.
 
-v3.1 05.11.17
+v3.1 2017-11-05
 Fixed the chance to rend.
 Updated the reroll to hit input to reflect the user manual.
 
-v3.0 22.10.17
+v3.0 2017-10-22
 Major update. 
 Changes to the input sheet, making it more use friendly.
 Reorganisation of the calculations, making the sheet easier to update later. This
