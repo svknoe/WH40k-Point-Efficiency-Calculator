@@ -1,3 +1,9 @@
+v5.5e 2022-11-18	
+Changed Poison to 'Wound on Roll'
+Removed 'Vehicle' filter from mortal wounds.
+Added general filter to enable/disable damage rows for any unit type.
+Updated target stats.
+
 v5.4e 2022-11-10
 Added 'Changelog' sheet.
 Added vehicle filter for mortal wounds.
