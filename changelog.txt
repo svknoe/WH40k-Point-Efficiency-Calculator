@@ -1,4 +1,8 @@
-v5.5e 2022-11-18	
+v5.5a 2023-01-06
+Added cap option for mortal wounds.
+Updated target stats for Arks of Omen.
+
+v5.5a 2022-11-18	
 Changed Poison to 'Wound on Roll'
 Removed 'Vehicle' filter from mortal wounds.
 Added general filter to enable/disable damage rows for any unit type.
