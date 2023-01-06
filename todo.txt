@@ -1,7 +1,0 @@
-X reorganise ribbon
-  update ability explanations
-X unit type filter
-  ignore fnp
-
-X remove only vehicle
-  change poison to wound on roll
