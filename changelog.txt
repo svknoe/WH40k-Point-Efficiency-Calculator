@@ -1,3 +1,10 @@
+v5.5c 2023-01-30	
+Added Dark Mode: See setting in upper right of Input sheet.
+Added 'no ignore wounds' option.
+Added melee/ranged split for damage reduction.
+Bug fix: A blank armour save is now interpreted at a 7+ rather than as a 0+.
+Updated targets.
+
 v5.5c 2023-01-24				
 Updated targets.			
 				
