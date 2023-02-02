@@ -1,4 +1,7 @@
-v5.5c 2023-01-30	
+v5.6b 2023-02-02	
+Fixed bug that in rare cases made Transhuman and Transhitman to not work.
+
+v5.6a 2023-01-30	
 Added Dark Mode: See setting in upper right of Input sheet.
 Added 'no ignore wounds' option.
 Added melee/ranged split for damage reduction.
