@@ -1,198 +1,206 @@
+v6.0a 2023-05-29	
+	Updated to 10th edition rules:
+	 - Crits, Sustained Hits, Lethal Hits, Devastating Wounds, Blast, Reroll a single roll of 1.
+	Enabled cut/paste and row insertion/deletion in the Targets sheet.
+	Added support for using multiple unit types for Filter and Targets.
+	Updated targets.
+	
+v5.7a 2023-05-22	
+	Enabled cut/paste and row insertion/deletion in the Input sheet.
+	
+v5.6c 2023-05-10	
+	Fixed bug that made the 'End Attack' feature for mortal wounds to not work.
+	
 v5.6b 2023-02-02	
-Fixed bug that in rare cases made Transhuman and Transhitman to not work.
-
+	Fixed bug that in rare cases made Transhuman and Transhitman to not work.
+	
 v5.6a 2023-01-30	
-Added Dark Mode: See setting in upper right of Input sheet.
-Added 'no ignore wounds' option.
-Added melee/ranged split for damage reduction.
-Bug fix: A blank armour save is now interpreted at a 7+ rather than as a 0+.
-Updated targets.
-
-v5.5c 2023-01-24				
-Updated targets.			
-				
-v5.5b 2023-01-06				
-Added cap option for mortal wounds.			
-Updated target stats for Arks of Omen.			
-
-v5.5a 2023-01-06
-Added cap option for mortal wounds.
-Updated target stats for Arks of Omen.
-
+	Added Dark Mode: See setting in upper right of Input sheet.
+	Added 'no ignore wounds' option.
+	Added melee/ranged split for damage reduction.
+	Bug fix: A blank armour save is now interpreted at a 7+ rather than as a 0+.
+	Updated targets.
+	
+v5.5c 2023-01-24	
+	Updated targets.
+	
+v5.5b 2023-01-06	
+	Added cap option for mortal wounds.
+	Updated target stats for Arks of Omen.
+	
 v5.5a 2022-11-18	
-Changed Poison to 'Wound on Roll'
-Removed 'Vehicle' filter from mortal wounds.
-Added general filter to enable/disable damage rows for any unit type.
-Updated target stats.
-
-v5.4e 2022-11-10
-Added 'Changelog' sheet.
-Added vehicle filter for mortal wounds.
-Updated target stats.
-
-v5.4d 2022-10-08
-Bug fix: Fixed reroll 1 die to wound in cases where there are no hits.
-Bug fix: Corrected overkill penalty.
-Added unit size for targets.
-Overkill penalties now only apply to target unit of more than 1 model.
-Updated target stats.
-
-v5.4c 2022-09-26
-Bug fix: A few rows had corrupted formulas.
-
-v5.4b 2022-09-24
-Added Deamon saves.
-Updated enemy stats.
-
-v5.4a 2022-07-08
-Updated UI
-Added option for flat number of mortal wounds.
-Fixed bug where saves vs mortal wounds were applied twice.
-Fixed a bug that stopped combining rows working for some rows.
-
-v5.3d 2022-07-04
-Updated target stats.
-
-v5.3c 2022-07-01
-Added option of ignoring penalties to hit and wound.
-
-v5.3b 2022-06-21
-Added relative referencing to 'Combine' and 'Pick Best'.
-
-v5.3a 2022-05-12
-Added Min Hit Roll for defenders.
-Added AP reduction (AoC).
-Added setting for max overkill penalty.
-It is no longer required to insert weapon names.
-Updated enemy stats.
-
-v5.2b 2022-03-21
-Fixed formula bug for reroll 1 hit that impacted some rows.
-Wound on hit roll now correctly doesn't auto wound on rolls of 1.
-
-v5.2a 2022-03-18
-Split hit penalties into melee and ranged versions.
-Split wound penalties into melee and ranged versions.
-Split reroll denying into melee and ranged versions.
-Added light cover.
-Added ignore light cover.
-Added half damage.
-Extended auto wound on 6s to auto wound on Xs.
-Changed wording of transhuman.
-Updated enemy stats.
-
-v5.1c 07.02.2022
-Fixed damage 11-16 being broken.
-Fixed line 46 being broken.
-Changed reroll notation from 'n/6' to 'n' to avoid Google Sheets fraction/date bug.
-
-v5.1b 2022-02-05
-Removed rows 151-300 to reduce file size.
-Minor performance increase.
-Removed six enemy columns.
-Updated enemy stats.
-
-v5.1a 2022-02-04
-Fixed exploding 6s bug caused by last update.
-Replaced Talos by Stormsurge.
-
-v5.0a 2022-02-03
-Added descriptions of legal inputs.
-Shifted PPP color range downwards:
- - From (green = 1.5, yellow = 4, red = 10) to (green = 0.8, yellow = 2.8, red = 8)
-Fixed bug that caused mortal wounds to ignore FNP.
-Fixed poison bug.
-Added more damage profiles.
-Added a distinction between melee and ranged attacks.
-Updated enemy point costs, changed enemy selection.
-
-Added more special rules for attackers:
- - Auto hits
- - Auto wound on hit rolls
- - Reroll one failed hit roll
- - Auto wounds
- - Reroll one failed wound roll
- - Reroll damage rolls
- - Reroll 1 damage roll
- - Ignore invuls
-
-Added more special rules for defenders:
- - Invul saves vs melee.
- - Invul saves vs ranged.
- - Save vs mortal wounds.
- - No rerolls from melee
- - No rerolls from ranged
-
-
-v4.1c 2021-12-21
-Updated enemy stats.
-
-v4.1b 2021-11-13
-Bug fix: The armor value of the fourth enemy was hardcoded to 5, rather than being read from the enemies sheet.
-
-v4.1a 2021-11-12
-Added option to ignore overkill calculations.
-Added display of colour coded defensive abilities to output sheets.
-Reduced column widths for easier viewing.
-Update enemy stats.
-
-v4.0a 2021-11-06
-Updated reroll interaction with penalties.
-Added roll modifier caps.
-Added wound modifiers.
-Added exploding 6s to hit.
-Added damage reduction abilities.
-Added Ignore AP abilities.
-Added Transhuman Physiology.
-Updated stats for enemies.
-Updated user guide with new abilities and Enemies sheet.
-Added more syntax explanations to Input sheet.
-Rework of interactions between (random) damage, FNP and target wounds.
-
-v3.3b 2018-12-16
-Updated point costs for enemies.
-
-v3.3a 2018-04-14
-Added the option of letting a unit to choose weapon types based on the target.
-Changed some enemies and updated point costs.
-
-v3.2e 2018-03-10
-Fixed the title of the PPP sheet.
-
-v3.2d 2018-03-10
-The 'rend dmg mod' sheet had the wrong forumla from line 114 onwards.
-
-v3.2c 2018-02-05
-Fixed a bug where poison did not respond to changing the targets vehicle status.
-
-v3.2b - Not uploaded
-Bug fix
-
-v3.2a 2017-11-07
-Fixed the interaction between to hit penalties and rerolls to hit.
-
-v3.2 2017-11-06
-Added an optional input sheet for enemies.
-Added support for to hit penalties for enemy targets.
-Removed the partial support for Quatum Shielding.
-Removed support for Rapacious Hunger.
-Updated Hive Tyrant stats for enemy targets.
-Replaced Bloodthirster with Daemon Prince in enemy targets.
-Fixed an error that caused snipers with multiple attacks to cause too few mortal wounds.
-
-v3.1 2017-11-05
-Fixed the chance to rend.
-Updated the reroll to hit input to reflect the user manual.
-
-v3.0 2017-10-22
-Major update. 
-Changes to the input sheet, making it more use friendly.
-Reorganisation of the calculations, making the sheet easier to update later. This
-also fixed multiple errors, such as the interaction between rending and extra damage
-on a '6'.
-Fixed the interaction between reroll to wound, and effects on a '6' to wound.
-Fixed the broken reroll ones to hit, making it no longer apply twice.
-Added Melta
-Added All is Dust
-Added user manual
-Published on Github
+	Changed Poison to 'Wound on Roll'
+	Removed 'Vehicle' filter from mortal wounds.
+	Added general filter to enable/disable damage rows for any unit type.
+	Updated target stats.
+	
+v5.4e 2022-11-10	
+	Added 'Changelog' sheet.
+	Added vehicle filter for mortal wounds.
+	Updated target stats.
+	
+v5.4d 2022-10-08	
+	Bug fix: Fixed reroll 1 die to wound in cases where there are no hits.
+	Bug fix: Corrected overkill penalty.
+	Added unit size for targets.
+	Overkill penalties now only apply to target unit of more than 1 model.
+	Updated target stats.
+	
+v5.4c 2022-09-26	
+	Bug fix: A few rows had corrupted formulas.
+	
+v5.4b 2022-09-24	
+	Added Deamon saves.
+	Updated enemy stats.
+	
+v5.4a 2022-07-08	
+	Updated UI
+	Added option for flat number of mortal wounds.
+	Fixed bug where saves vs mortal wounds were applied twice.
+	Fixed a bug that stopped combining rows working for some rows.
+	
+v5.3d 2022-07-04	
+	Updated target stats.
+	
+v5.3c 2022-07-01	
+	Added option of ignoring penalties to hit and wound.
+	
+v5.3b 2022-06-21	
+	Added relative referencing to 'Combine' and 'Pick Best'.
+	
+v5.3a 2022-05-12	
+	Added Min Hit Roll for defenders.
+	Added AP reduction (AoC).
+	Added setting for max overkill penalty.
+	It is no longer required to insert weapon names.
+	Updated enemy stats.
+	
+v5.2b 2022-03-21	
+	Fixed formula bug for reroll 1 hit that impacted some rows.
+	Wound on hit roll now correctly doesn't auto wound on rolls of 1.
+	
+v5.2a 2022-03-18	
+	Split hit penalties into melee and ranged versions.
+	Split wound penalties into melee and ranged versions.
+	Split reroll denying into melee and ranged versions.
+	Added light cover.
+	Added ignore light cover.
+	Added half damage.
+	Extended auto wound on 6s to auto wound on Xs.
+	Changed wording of transhuman.
+	Updated enemy stats.
+	
+v5.1c 07.02.2022	
+	Fixed damage 11-16 being broken.
+	Fixed line 46 being broken.
+	Changed reroll notation from 'n/6' to 'n' to avoid Google Sheets fraction/date bug.
+	
+v5.1b 2022-02-05	
+	Removed rows 151-300 to reduce file size.
+	Minor performance increase.
+	Removed six enemy columns.
+	Updated enemy stats.
+	
+v5.1a 2022-02-04	
+	Fixed exploding 6s bug caused by last update.
+	Replaced Talos by Stormsurge.
+	
+v5.0a 2022-02-03	
+	Added descriptions of legal inputs.
+	Shifted PPP color range downwards:
+	 - From (green = 1.5, yellow = 4, red = 10) to (green = 0.8, yellow = 2.8, red = 8)
+	Fixed bug that caused mortal wounds to ignore FNP.
+	Fixed poison bug.
+	Added more damage profiles.
+	Added a distinction between melee and ranged attacks.
+	Updated enemy point costs, changed enemy selection.
+	
+	Added more special rules for attackers:
+	 - Auto hits
+	 - Auto wound on hit rolls
+	 - Reroll one failed hit roll
+	 - Auto wounds
+	 - Reroll one failed wound roll
+	 - Reroll damage rolls
+	 - Reroll 1 damage roll
+	 - Ignore invuls
+	
+	Added more special rules for defenders:
+	 - Invul saves vs melee.
+	 - Invul saves vs ranged.
+	 - Save vs mortal wounds.
+	 - No rerolls from melee
+	 - No rerolls from ranged
+	
+v4.1c 2021-12-21	
+	Updated enemy stats.
+	
+v4.1b 2021-11-13	
+	Bug fix: The armor value of the fourth enemy was hardcoded to 5, rather than being read from the enemies sheet.
+	
+v4.1a 2021-11-12	
+	Added option to ignore overkill calculations.
+	Added display of colour coded defensive abilities to output sheets.
+	Reduced column widths for easier viewing.
+	Update enemy stats.
+	
+v4.0a 2021-11-06	
+	Updated reroll interaction with penalties.
+	Added roll modifier caps.
+	Added wound modifiers.
+	Added exploding 6s to hit.
+	Added damage reduction abilities.
+	Added Ignore AP abilities.
+	Added Transhuman Physiology.
+	Updated stats for enemies.
+	Updated user guide with new abilities and Enemies sheet.
+	Added more syntax explanations to Input sheet.
+	Rework of interactions between (random) damage, FNP and target wounds.
+	
+v3.3b 2018-12-16	
+	Updated point costs for enemies.
+	
+v3.3a 2018-04-14	
+	Added the option of letting a unit to choose weapon types based on the target.
+	Changed some enemies and updated point costs.
+	
+v3.2e 2018-03-10	
+	Fixed the title of the PPP sheet.
+	
+v3.2d 2018-03-10	
+	The 'rend dmg mod' sheet had the wrong forumla from line 114 onwards.
+	
+v3.2c 2018-02-05	
+	Fixed a bug where poison did not respond to changing the targets vehicle status.
+	
+v3.2b - Not uploaded	
+	Bug fix
+	
+v3.2a 2017-11-07	
+	Fixed the interaction between to hit penalties and rerolls to hit.
+	
+v3.2 2017-11-06	
+	Added an optional input sheet for enemies.
+	Added support for to hit penalties for enemy targets.
+	Removed the partial support for Quatum Shielding.
+	Removed support for Rapacious Hunger.
+	Updated Hive Tyrant stats for enemy targets.
+	Replaced Bloodthirster with Daemon Prince in enemy targets.
+	Fixed an error that caused snipers with multiple attacks to cause too few mortal wounds.
+	
+v3.1 2017-11-05	
+	Fixed the chance to rend.
+	Updated the reroll to hit input to reflect the user manual.
+	
+v3.0 2017-10-22	
+	Major update. 
+	Changes to the input sheet, making it more use friendly.
+	Reorganisation of the calculations, making the sheet easier to update later. This
+	also fixed multiple errors, such as the interaction between rending and extra damage
+	on a '6'.
+	Fixed the interaction between reroll to wound, and effects on a '6' to wound.
+	Fixed the broken reroll ones to hit, making it no longer apply twice.
+	Added Melta
+	Added All is Dust
+	Added user manual
+	Published on Github
