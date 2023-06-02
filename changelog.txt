@@ -1,3 +1,7 @@
+v6.0b 2023-06-02						
+	Removed unused Targets rows to reduce file size.					
+	Fixed bug that caused dark mode to behave badly in google sheets version.					
+
 v6.0a 2023-05-29	
 	Updated to 10th edition rules:
 	 - Crits, Sustained Hits, Lethal Hits, Devastating Wounds, Blast, Reroll a single roll of 1.
