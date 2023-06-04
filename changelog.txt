@@ -1,3 +1,9 @@
+v6.1a 2023-06-04											
+	Minor GUI update.										
+	Fixed 'Blast' bug that caused Blast to make damage calculations throw errors.										
+	Made 'Attacks' column of 'Input' sheet more flexible: Any string on the format 'AdB+C' is valid for any int values of A, B and C.										
+	Fixed bug that in some cases made random damage not work correctly in Google Sheets version.										
+
 v6.0b 2023-06-02						
 	Removed unused Targets rows to reduce file size.					
 	Fixed bug that caused dark mode to behave badly in google sheets version.					
