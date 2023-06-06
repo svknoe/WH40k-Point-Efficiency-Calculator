@@ -1,3 +1,7 @@
+v6.1d 2023-06-06	
+	AP values may now be specified as negative values as well as positive ones. The absolute value is used.
+	Fixed bug introduced in 6.0a that caused reroll one die to hit/wound to no work properly.
+
 v6.1c 2023-06-05	
 	Fixed bug introduced in 6.1a that caused 'damage' coulmn to be used for number of attacks.
 
