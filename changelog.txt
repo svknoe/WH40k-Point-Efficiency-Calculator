@@ -1,3 +1,10 @@
+v6.2a 2023-06-16				
+	Blank BS values are now allowed for Torrent weapons.			
+	Wound on Roll' and 'Crit on Roll' have been combined into a single 'Anti' column.			
+	Blast is now 0-N rather than 0-1. This accounts for the possibilty of a single profile having multiple blast weapons.			
+	Fixed interaction between crits and light cover.			
+	Updated targets.			
+
 v6.1d 2023-06-06	
 	AP values may now be specified as negative values as well as positive ones. The absolute value is used.
 	Fixed bug introduced in 6.0a that caused reroll one die to hit/wound to no work properly.
