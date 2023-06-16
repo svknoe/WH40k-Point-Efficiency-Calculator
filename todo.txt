@@ -1,0 +1,3 @@
+TODO:
+ - Extend filter negation synax
+ - Remove custom mortal wounds
