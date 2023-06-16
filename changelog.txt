@@ -1,3 +1,6 @@
+v6.2b 2023-06-16				
+	Fixed bug that caused 'Anti' to not work.			
+
 v6.2a 2023-06-16				
 	Blank BS values are now allowed for Torrent weapons.			
 	Wound on Roll' and 'Crit on Roll' have been combined into a single 'Anti' column.			
