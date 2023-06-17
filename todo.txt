@@ -1,3 +1,8 @@
 TODO:
  - Extend filter negation synax
  - Remove custom mortal wounds
+ - Remove transhuman/transhitman?
+ - Add -1 to wound if strength > t
+ - Flat mortals broken - no FNP
+ - Mortals overkill?
+ - div by zero ppp display bug 

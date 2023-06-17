@@ -1,3 +1,9 @@
+v6.2c 2023-06-17					
+	Fixed interaction between wound penalties and 'Anti'.				
+	Fixed bug that caused FNP to not work against mortal wounds.				
+	Replaced divide by 0 error message in PPP sheet by ' - '.				
+	Fixed bug that broke flat mortals in excel version of the sheet.				
+
 v6.2b 2023-06-16				
 	Fixed bug that caused 'Anti' to not work.			
 
