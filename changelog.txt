@@ -1,3 +1,10 @@
+v6.3a 2023-07-01			
+	Extended ability explanations in target sheet.		
+	Added 10e transhuman.		
+	Fixed bug that caused blast n>1 to not work properly.		
+	Fixed interaction between devastating wounds and damage reduction.		
+	Added unit type for 'Anti'.		
+
 v6.2e 2023-06-23			
 	Fixed interaction between critical hits and AP reduction.		
 			
