@@ -1,3 +1,10 @@
+v6.4c 2024-04-25
+	File size optimization.
+	Updated targets.
+		
+v6.4b 2024-01-30		
+	Updated targets.
+
 v6.4a 2023-09-07	
 	Changed devastating wounds to new way of working.
 	Updated targets.
