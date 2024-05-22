@@ -1,3 +1,23 @@
+v7.0a 2024-06-07
+	Functionality:
+	 - Added a system for managing army rules. See the Army Rules and PPP sheets.
+	 - Added a system for attacker/defender settings. See the PPP sheet.
+	 - Added an Intro sheet.
+	 - Added a Count column to the Input sheet.
+	 - Added a damage Modifier column to the Input sheet.
+	 - Removed dark mode. This was too much work to maintain.
+
+	Changes:
+	 - Crit AP and Crit Damage under the Wound Rolls heading in the Input sheet are now modifiers instead of overrides.
+	 - Changed how the Input filter is interpreted. If a target matches any type with "!" then it does not pass the filter.
+	 - Blast is now a bool instead of an int - use Count instead.
+	 - Moved the No Ignore D column to the Damage header and renamed it to No Penalties.
+	 - Added 50 more input rows, removed 4 targets.
+
+	Fixes:
+	 - Fixed a bug that caused d6+1 damage to always be treated as d6 damage.
+	 - Fixed the interaction between half damage and damage modifiers.
+
 v6.5a 2024-05-08		
 	Fixed a bug that caused 'No ignore damage' to also ignore FNP.	
 	Added possibilty of using both the 'Sum' and 'Pick Best' Input columns in the same row.	
