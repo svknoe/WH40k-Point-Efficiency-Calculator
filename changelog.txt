@@ -13,6 +13,7 @@ v7.0a 2024-06-07
 	 - Blast is now a bool instead of an int - use Count instead.
 	 - Moved the No Ignore D column to the Damage header and renamed it to No Penalties.
 	 - Added 50 more input rows, removed 4 targets.
+	 - Updated Targets.
 
 	Fixes:
 	 - Fixed a bug that caused d6+1 damage to always be treated as d6 damage.
