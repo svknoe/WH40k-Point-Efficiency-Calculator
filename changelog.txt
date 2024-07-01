@@ -1,3 +1,15 @@
+v7.2a 2024-07-01						
+	Removed deprecated rules:					
+	 - Removed No Invuls from Input tab.					
+	 - Removed Min Hit from Targets tab.					
+	 - Removed Min Wnd from Targets tab.					
+	 - Removed Ignore AP from Targets tab.					
+						
+	Added a No Penalties column to Saves in the Input tab.					
+	Added missing row formulas to output tabs.					
+	Fixed a bug from v7.1a that caused Flat Mortals to provide Blast, and the Blast column to do nothing.					
+	Fixed a bug from v7.1a that caused unit descriptions to not work properly with cut/paste in the Input tab.					
+
 v7.1b 2024-06-24	
 	Fixed bug from v7.1a that caused rows below row 47 to not work and give reference errors.
 
