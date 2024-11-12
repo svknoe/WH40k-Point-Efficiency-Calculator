@@ -1,3 +1,6 @@
+v7.2c 2024-10-19	
+	Updated Targets.
+
 v7.2b 2024-07-07	
 	Fixed a bug that caused 'No Cover' to not work properly.
 
