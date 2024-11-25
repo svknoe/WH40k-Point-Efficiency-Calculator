@@ -1,3 +1,6 @@
+v7.2d 2024-11-20	
+	Added video tutorial.
+
 v7.2c 2024-10-19	
 	Updated Targets.
 
