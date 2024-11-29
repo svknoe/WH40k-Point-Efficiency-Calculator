@@ -1,3 +1,8 @@
+v7.2e 2024-11-29
+	Added secondary titles to Damage, PPW and PPP sheets to making image sharing without target stats easier.
+	Fixed a bug that caused Flat Mortals to not work unless Count, Attacks and Damage were specified.
+	Fixed a bug the caused Damage 0 to be interpreted as Damage 1.
+
 v7.2d 2024-11-20	
 	Added video tutorial.
 
