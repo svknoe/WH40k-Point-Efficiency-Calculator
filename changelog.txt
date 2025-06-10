@@ -1,3 +1,13 @@
+v7.3a 2025-06-11	
+	Fixed a bug that caused attacker rule keywords to break by being shifted on inserting new rows or cut/pasting.
+	Changed the way phase restrictions work in Army Rules. They are now a separate drop down instead of keywords.
+	Added an 'Indirect' stat in the Input sheet. This is connected to a new 'Line of sight' attacker setting in the PPP sheet.
+	Added reference to settings in Damage and PPW sheets.
+	Updated Targets.
+	
+v7.2f 2025-01-30	
+	Updated Targets.
+
 v7.2e 2024-11-29
 	Added secondary titles to Damage, PPW and PPP sheets to making image sharing without target stats easier.
 	Fixed a bug that caused Flat Mortals to not work unless Count, Attacks and Damage were specified.
