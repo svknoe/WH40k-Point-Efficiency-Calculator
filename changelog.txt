@@ -1,3 +1,7 @@
+v7.3b 2025-06-11			
+	Fixed a bug that caused melee and ranged to swap meaning in Army Rules.		
+	Fixed a bug that caused 'Flat Mortals' in the Input sheet to break if 'Count' was left unspecified.		
+
 v7.3a 2025-06-11	
 	Fixed a bug that caused attacker rule keywords to break by being shifted on inserting new rows or cut/pasting.
 	Changed the way phase restrictions work in Army Rules. They are now a separate drop down instead of keywords.
