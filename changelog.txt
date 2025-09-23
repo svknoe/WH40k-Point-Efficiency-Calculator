@@ -1,3 +1,9 @@
+v7.3c 2025-09-23		
+	Added 'Kills' tab.	
+	Enabled setting Anti for multiple types simultaneously.	
+	Demoted the 'Applicable Rules' tab to a debug tab because it doesn't work in google sheets.	
+	Updated targets.	
+
 v7.3b 2025-06-11			
 	Fixed a bug that caused melee and ranged to swap meaning in Army Rules.		
 	Fixed a bug that caused 'Flat Mortals' in the Input sheet to break if 'Count' was left unspecified.		
