@@ -1,0 +1,4 @@
+# The workbook is a zipped binary (Office Open XML). Tell git not to attempt
+# line-diffing, three-way merging, or EOL normalization on it.
+*.xlsx binary
+*.xlsm binary
