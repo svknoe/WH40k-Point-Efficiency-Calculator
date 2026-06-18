@@ -37,15 +37,16 @@
 //                behind them) are converted, so computed booleans on these tabs
 //                are left untouched — and these are the cells made delete-proof.
 //   forceRanges: a list of A1 ranges whose boolean cells become checkboxes even
-//                when a formula drives them (e.g. an indicator column that
-//                mirrors a setting). These get the checkbox VALIDATION only —
-//                their value/formula is never touched — and they are NOT made
-//                delete-proof, because "restoring" one would overwrite its
-//                formula with a literal false. Auto-detection can't tell a
-//                display formula-checkbox (Targets!Q) from an ordinary computed
-//                boolean (Army Rules!A, PPP!D5), so these must be listed by hand.
+//                when a formula drives them (e.g. the Targets Cover column, which
+//                mirrors a global setting). These get the checkbox VALIDATION
+//                without disturbing the formula, AND are made delete-proof.
+//                Clearing one with Delete restores the checkbox as a literal
+//                false — which intentionally severs that cell from its formula,
+//                turning a hand-cleared Cover box into a plain, independently
+//                toggleable checkbox. Auto-detection can't tell a display
+//                formula-checkbox (Targets!Q) from an ordinary computed boolean
+//                (Army Rules!A), so these must be listed by hand.
 var CHECKBOX_TARGETS = [
-  { sheet: 'PPP',        ranges: ['AE9:AE14', 'AE16:AE20', 'AG9:AG20'] },
   { sheet: 'Input',      ranges: null },   // ranges shift per release → scan all
   { sheet: 'Army Rules', ranges: null },
   { sheet: 'Targets',    ranges: null, forceRanges: ['Q21:Q45'] },
@@ -57,7 +58,7 @@ var FREEZE = [
   { sheet: 'Damage', rows: 20 },
   { sheet: 'Kills',  rows: 20 },
   { sheet: 'PPW',    rows: 20 },
-  { sheet: 'PPP',    rows: 20 },
+  { sheet: 'Efficiency (PPP)', rows: 20 },
 ];
 
 // Hidden sheet that records, per tab, the A1 ranges holding checkboxes.
@@ -142,21 +143,28 @@ function applyPostProcessing() {
       cells = cells.concat(applyCheckboxesToBlock(block));
     });
     totalBoxes += cells.length;
-    if (cells.length > 0) {
-      mapRows.push([target.sheet, consolidateToA1Ranges(cells)]);
-    }
     report.push('• ' + target.sheet + ': ' + cells.length + ' checkbox' + (cells.length === 1 ? '' : 'es'));
 
-    // Formula-driven display checkboxes: validation only, kept out of the map.
+    // Formula-driven display checkboxes (e.g. the Targets Cover column): give
+    // them checkbox validation without disturbing the formula, and delete-proof
+    // them too. Clearing one rewrites it as a literal false — restoring the box
+    // and intentionally severing that cell from its global-setting formula.
     if (target.forceRanges) {
-      var forced = 0;
+      var forced = [];
       target.forceRanges.forEach(function (a1) {
-        forced += applyCheckboxValidationOnly(sheet.getRange(a1));
+        forced = forced.concat(applyCheckboxValidationOnly(sheet.getRange(a1)));
       });
-      if (forced > 0) {
-        totalBoxes += forced;
-        report.push('  ↳ +' + forced + ' formula-driven (display-only, not delete-proofed)');
+      if (forced.length > 0) {
+        totalBoxes += forced.length;
+        cells = cells.concat(forced);
+        report.push('  ↳ +' + forced.length + ' formula-driven (delete-proofed: clearing severs the formula)');
       }
+    }
+
+    // Persist every checkbox cell on this tab (literal + formula-driven) so
+    // onEdit can restore any that get cleared with the Delete key.
+    if (cells.length > 0) {
+      mapRows.push([target.sheet, consolidateToA1Ranges(cells)]);
     }
   });
 
@@ -211,23 +219,27 @@ function applyCheckboxesToBlock(block) {
 /**
  * Adds checkbox VALIDATION to every boolean-valued cell in `block` — including
  * formula-driven ones — without touching any value or formula. Use for display
- * checkboxes that mirror a formula (e.g. Targets!Q21:Q45). Returns the count.
+ * checkboxes that mirror a formula (e.g. Targets!Q21:Q45). Returns the absolute
+ * [row, col] (1-based) of each cell it converted, so the caller can delete-proof
+ * them: clearing one later rewrites a literal false, severing the formula.
  */
 function applyCheckboxValidationOnly(block) {
   var values = block.getValues();   // formula results; a formula bool reads as boolean here
   var rules = block.getDataValidations();
   var checkbox = SpreadsheetApp.newDataValidation().requireCheckbox().build();
-  var count = 0;
+  var baseRow = block.getRow();
+  var baseCol = block.getColumn();
+  var cells = [];
   for (var r = 0; r < values.length; r++) {
     for (var c = 0; c < values[r].length; c++) {
       if (typeof values[r][c] === 'boolean') {   // skip blanks/text/numbers in the range
         rules[r][c] = checkbox;
-        count++;
+        cells.push([baseRow + r, baseCol + c]);
       }
     }
   }
-  if (count > 0) block.setDataValidations(rules);
-  return count;
+  if (cells.length > 0) block.setDataValidations(rules);
+  return cells;
 }
 
 // ---------------------------------------------------------------------------

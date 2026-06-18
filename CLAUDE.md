@@ -94,4 +94,3 @@ binary's XML by hand.
 
 - Remote: `https://github.com/svknoe/WH40k-Point-Efficiency-Calculator.git`
 - Default branch: `main`. Release tags: `v3.3b`, `v4.1b`, `v5.7a`, `v6.4c`, `v7.3c`, … (one kept per major).
-- Current work: branch `8.1.0` (the in-progress 8.1.0 release; 8.0.0 brought the 11th-edition update).
