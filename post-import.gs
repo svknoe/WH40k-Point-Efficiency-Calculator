@@ -64,6 +64,11 @@ var FREEZE = [
 // Hidden sheet that records, per tab, the A1 ranges holding checkboxes.
 // Written by applyPostProcessing; read by onEdit. Safe to leave hidden.
 var CHECKBOX_MAP_SHEET = '_wh40k_checkbox_map';
+
+// The lowercase calc tab the map sheet is parked directly after, keeping it out
+// of the block of capitalized user-facing tabs. If this tab is ever renamed the
+// map is simply left where it is (see positionCheckboxMap).
+var CHECKBOX_MAP_ANCHOR = 'cell rows';
 // ---------------------------------------------------------------------------
 
 function onOpen() {
@@ -320,12 +325,31 @@ function consolidateToA1Ranges(cells) {
 function writeCheckboxMap(ss, mapRows) {
   var sheet = ss.getSheetByName(CHECKBOX_MAP_SHEET);
   if (!sheet) sheet = ss.insertSheet(CHECKBOX_MAP_SHEET);
+  positionCheckboxMap(ss, sheet);
   sheet.clear();
   sheet.getRange(1, 1, 1, 2).setValues([['Sheet', 'CheckboxRanges']]);
   if (mapRows.length > 0) {
     sheet.getRange(2, 1, mapRows.length, 2).setValues(mapRows);
   }
   sheet.hideSheet();
+}
+
+/**
+ * Parks the map sheet immediately after the CHECKBOX_MAP_ANCHOR calc tab, so it
+ * sits with the lowercase calc/appendix tabs instead of among the capitalized
+ * user tabs where insertSheet() drops it. The target index accounts for the map
+ * sheet being pulled out of the list first: when it currently sits before the
+ * anchor, removing it shifts the anchor down one, so the destination is the
+ * anchor's index; when it sits after, the destination is one past the anchor.
+ * If the anchor tab is missing (renamed), the map is left where it is.
+ */
+function positionCheckboxMap(ss, sheet) {
+  var anchor = ss.getSheetByName(CHECKBOX_MAP_ANCHOR);
+  if (!anchor) return;
+  var anchorIdx = anchor.getIndex();          // 1-based
+  var target = sheet.getIndex() > anchorIdx ? anchorIdx + 1 : anchorIdx;
+  ss.setActiveSheet(sheet);
+  ss.moveActiveSheet(target);
 }
 
 /** Reads the hidden map sheet into {sheetName: ["G21:G200", "O21:O36", …]}. */
